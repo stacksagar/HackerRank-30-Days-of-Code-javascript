@@ -5,19 +5,18 @@ Rank
 `);
 
 function processData(input = "") {
-  const all_string = input.split("\n").filter((s) => s);
+  let stringLength = input.split("\n").slice(1);
 
-  all_string.forEach((string) => {
-    let even = "";
-    let odd = "";
-    for (let i = 0; i < string.length; i++) {
+  stringLength.forEach((str) => {
+    let even = [];
+    let odd = [];
+    for (let i = 0; i < str.length; i++) {
       if (i % 2 === 0) {
-        even += string[i];
+        even.push(str[i]);
       } else {
-        odd += string[i];
+        odd.push(str[i]);
       }
     }
-
-    console.log(`${even} ${odd}`);
+    console.log(`${even.join("")} ${odd.join("")}`);
   });
 }
