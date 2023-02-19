@@ -10,4 +10,6 @@ function main() {
   console.log(secondInteger + i);
   console.log((secondFloat + d).toFixed(1));
   console.log(s + secondString);
+
+
 }
