@@ -17,6 +17,8 @@ function processData(input = "") {
         odd.push(str[i]);
       }
     }
+
+
     console.log(`${even.join("")} ${odd.join("")}`);
   });
 }
